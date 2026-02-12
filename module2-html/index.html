@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/styles.css">
 <meta charset="UTF-8">Submit</button>
 <title>Personal Online CV</title>
 </head>
 <body>
 <header>
-    <section>
+    <section class="card">
 <h1>Francis Cesar D. Apal</h1>
 <p> IT Student | Web Systems and Technologies </p>
 </header>
 <main>
-<section>
+    <div class="container">
+<section class="card">
     <img src="images/profile.png" alt="Profile photo">
     <h2>About Me</h2>
     <p> A passionate and self-driven individual who's willing to do whatever it takes.</p>
@@ -21,7 +23,7 @@
     <a href="https://github.com/Francheeze" target="_blank">github.com/Francheeze</a>
     </p> 
 </section>
-<section>
+<section class="card">
     <h2>Skills</h2>
     <ul>
         <li>HTML</li>
@@ -40,46 +42,37 @@
             <li>Backend</li>
         </ul>
 </section>
+<section class="card">
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Program</th>
+            <th>Institution</th>
+            <th>Year Graduated</th>
+        </tr>
+        <tr>
+            <td>Elementary</td>
+            <td>CES</td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>High School</td>
+            <td>LNHS</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Senior High School</td>
+            <td>MOGCHS</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td>USTP – CDO Campus</td>
+            <td>2028</td>
+        </tr>
+    </table>
 </section>
-<h2>Education</h2>
-<style>
-table, th, td {
-border: 1px solid black;
-border-collapse: collapse;
-}
-th, td {
-padding: 8px;
-}
-</style>
-<table>
-<tr>
-<th>Program</th>
-<th>Institution</th>
-<th>Year Graduated</th>
-</tr>
-<tr>
-    <th>Elementary</th>
-    <th>CES</th>
-    <th>2017</th>
-</tr>
-<tr>
-    <th>High School</th>
-    <th>LNHS</th>
-    <th>2021</th>
-</tr>
-<tr>
-    <th>Senior High School</th>
-    <th>MOGCHS</th>
-    <th>2023</th>
-</tr>
-<tr>
-    <th>College</th>
-    <th>USTP – CDO Campus</th>
-    <th>2028</th>
-</tr>
-</table>    
-</section>
-<section>
+<section class="card">
 <h2>Contact Me</h2>
 <form>
 <input type="text" placeholder="Name"><br><br>
@@ -88,6 +81,7 @@ padding: 8px;
 <button type="submit">Send</button>
 </form>
 </section>
+    </div>
 </main>
 <footer>
     <p>&copy; 2026 Francis Cesar Apal. All rights reserved. </p>

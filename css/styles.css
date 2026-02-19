@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    color: black;
     padding: 20px;
 }
 .container {
@@ -17,6 +18,7 @@ body {
 /* || Card Styling */
 .card {
     background: #ffffff;
+    color: black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -61,7 +63,13 @@ table {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }   
 }
 input, textarea {
     padding: 8px;
@@ -78,9 +86,35 @@ input, textarea {
     button:hover {
     background-color: #005fa3;
 }
-.dark-mode {
-    background-color:#222;
-    color:black;
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Make cards dark too */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Fix table header in dark mode */
+body.dark-mode th {
+    background-color: #333;
+}
+
+/* Fix table borders */
+body.dark-mode th,
+body.dark-mode td {
+    border: 1px solid #555;
+}
+
+/* Fix links in dark mode */
+body.dark-mode a {
+    color: #4da6ff;
+}
+
+body.dark-mode a:hover {
+    color: #82cfff;
 }
 .hidden {
     display:none;

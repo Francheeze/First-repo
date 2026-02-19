@@ -78,3 +78,10 @@ input, textarea {
     button:hover {
     background-color: #005fa3;
 }
+.dark-mode {
+    background-color:#222;
+    color:white;
+}
+.hidden {
+    display:none;
+}

@@ -92,6 +92,11 @@ input, textarea {
     width: 200px;
     border-radius: 50%;
 }
+
+header p {
+    text-align: center;
+}
+
 body.dark-mode {
     background-color: #121212;
     color: white;

@@ -1,19 +1,27 @@
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
-import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
-    <div className={darkMode ? "dark" : "light"}>
+    <>
       <h1>My Personal Online CV</h1>
 
       <button onClick={() => setDarkMode(!darkMode)}>
-        Toggle Dark Mode
+        {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
 
       <Header />
@@ -21,7 +29,8 @@ function App() {
       <Skills />
       <Education />
       <Contact />
-    </div>
+    </>
   );
 }
+
 export default App;

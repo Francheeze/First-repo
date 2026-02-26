@@ -106,35 +106,30 @@ footer {
 .hidden {
     display:none;
 }
-.light {
-  background-color: white;
-  color: black;
-}
 
-.dark {
+body.dark {
   background-color: #121212;
   color: white;
-  min-height: 100vh;
 }
 
-.dark .card {
+body.dark .card {
   background-color: #1e1e1e;
   color: white;
 }
 
-.dark th {
+body.dark th {
   background-color: #333;
 }
 
-.dark th,
-.dark td {
+body.dark th,
+body.dark td {
   border: 1px solid #555;
 }
 
-.dark a {
+body.dark a {
   color: #4da6ff;
 }
 
-.dark a:hover {
+body.dark a:hover {
   color: #82cfff;
 }

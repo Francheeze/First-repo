@@ -8,6 +8,37 @@ import Contact from "./components/Contact";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ];
+
+  const education = [
+    {
+    year: "2028",
+    program: "BS Information Technology",
+    school: "USTP Cagayan de Oro"
+    },
+    {
+    year: "2024",
+    program: "STEM",
+    school: "MOGCHS"
+    },
+    {
+      year: "2021",
+      program: "High School",
+      school: "LNHS"
+    },
+    {
+      year: "2017",
+      program: "Elementary",
+      school: "CES"
+    }
+    ];
+    
+
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark");
@@ -26,8 +57,10 @@ function App() {
 
       <Header />
       <About />
-      <Skills />
-      <Education />
+      
+      {/* 2. Pass the array as a prop to the skills component */}
+      <Skills skills={skills} />
+      <Education education={education} />
       <Contact />
     </>
   );

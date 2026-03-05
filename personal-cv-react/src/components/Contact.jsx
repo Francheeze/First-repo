@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./Card";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -17,8 +18,7 @@ function Contact() {
   };
 
   return (
-    <section className="card">
-      <h2>Contact Me</h2>
+    <Card title="Contact Me">
 
       <form onSubmit={handleSubmit}>
         <input
@@ -39,7 +39,7 @@ function Contact() {
 
         <button type="submit">Send</button>
       </form>
-    </section>
+    </Card>
   );
 }
 

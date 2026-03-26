@@ -28,7 +28,6 @@ function Contact() {
         if (data.message) {
           alert(data.message); // Displays the "Hello [Name]" message
           
-          // Clear the form only after a successful response
           setName("");
           setEmail("");
         } else {
